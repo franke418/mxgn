@@ -1,0 +1,142 @@
+.nag {
+	font-size: 12pt;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.nag a:hover {
+	font-size: 12pt;
+	color: #CD2A55;
+	text-decoration: none;
+}
+.competenews {
+	font-size: 9pt;
+	font-weight: normal;
+	color: #8B8B88;
+	text-decoration: none;
+	line-height: 150%;
+}
+body {
+    background-image: url("../img/bj.gif");
+    margin-top: 0px;
+}
+.jiaotian {
+
+	font-size: 14px;
+	font-weight: normal;
+	color: #333333;
+	text-decoration: none;
+	line-height: 150%;
+}
+.jiaotian2 {
+	font-size: 12px;
+	font-weight: normal;
+	color: #666666;
+	text-decoration: none;
+	line-height: 150%;
+}
+.report {
+	font-size: 12px;
+	font-weight: normal;
+	color: #666666;
+	text-decoration: none;
+}
+.photo {
+
+	font-size: 9pt;
+	font-weight: normal;
+	color: #8B8B88;
+	text-decoration: none;
+	line-height: 120%;
+}
+.list {
+	font-size: 12px;
+	font-weight: normal;
+	color: #666666;
+	text-decoration: none;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCCCCC;
+}
+.nag_info {
+	font-size: 9pt;
+	font-weight: bold;
+	color: #CD2A55;
+	text-decoration: none;
+}
+a:hover {
+	font-size: 9pt;
+	color: #CD2A55;
+	text-decoration: none;
+}
+.nag2 {
+	font-size: 9pt;
+	font-weight: bold;
+	color: #99CC00;
+	text-decoration: none;
+}
+.nag3 {
+	font-size: 9pt;
+	color: #000;
+	text-decoration: none;
+}
+.sign caption {
+    background: #FFF;
+    padding: 0 0 5px 0;
+    width: 950px;
+    font: 22px "Î¢ÈíÑÅºÚ", Microsoft YaHei, Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.sign th {
+    font: 15px "Î¢ÈíÑÅºÚ", Microsoft YaHei, Arial, Helvetica, sans-serif;
+    color: #000;
+    border-bottom: 1px solid #C1DAD7;
+    border-top: 1px solid #C1DAD7;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 6px 6px 6px 12px;
+
+}
+
+.sign th.nobg {
+    border-top: 0;
+    border-left: 0;
+    border-right: 1px solid #C1DAD7;
+    background: none;
+}
+
+.sign td {
+    border-bottom: 1px solid #C1DAD7;
+    background: #fff;
+    font-size:11px;
+    padding: 6px 6px 6px 12px;
+    color: #4f6b72;
+}
+
+
+.sign td.alt {
+    background: #F5FAFA;
+    color: #797268;
+}
+
+.sign th.spec {
+    border-left: 1px solid #C1DAD7;
+    border-top: 0;
+    background: #fff no-repeat;
+    font: bold 10px "Î¢ÈíÑÅºÚ", Microsoft YaHei, Arial, Helvetica, sans-serif;
+}
+
+.sign th.specalt {
+    border-left: 1px solid #C1DAD7;
+    border-top: 0;
+    background: #f5fafa no-repeat;
+    font: bold 10px "Î¢ÈíÑÅºÚ", Microsoft YaHei, Arial, Helvetica, sans-serif;
+    color: #797268;
+}
+.sign input{
+    border: 1px solid gray;
+}
+
+body {
+	font: 11px "Î¢ÈíÑÅºÚ", Microsoft YaHei,Arial,Helvetica,sans-serif;
+}

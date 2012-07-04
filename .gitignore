@@ -1,0 +1,5 @@
+*.*~
+run/
+run/*.*
+app/logs/*.*
+*.db
