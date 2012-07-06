@@ -13,10 +13,10 @@ class Home extends MY_Controller{
     function index(){
 		log_message('info',$_SERVER['REMOTE_ADDR']);
         $notices = $this->notices->get_all_title(5);
-        $news = $this->db->query('SELECT * FROM `flyxg@com`.`supe_spaceitems` WHERE catid = 194 ORDER BY dateline DESC LIMIT 0,5')->result_array();
-        $threads = $this->db->query('SELECT * FROM `bbs_discuz`.`pre_forum_thread` where fid = 268 ORDER BY dateline DESC LIMIT 0,5')->result_array();//268
-	//$news = array('aa' =>'aa' , );
-        //$threads = array('bb' => 'bb', );
+       // $news = $this->db->query('SELECT * FROM `flyxg@com`.`supe_spaceitems` WHERE catid = 194 ORDER BY dateline DESC LIMIT 0,5')->result_array();
+        //$threads = $this->db->query('SELECT * FROM `bbs_discuz`.`pre_forum_thread` where fid = 268 ORDER BY dateline DESC LIMIT 0,5')->result_array();//268
+	$news = array('aa' =>'aa' , );
+        $threads = array('bb' => 'bb', );
         $this->assign('threads',$threads);
 		$this->assign('news',$news);
         $this->assign('notices',$notices);

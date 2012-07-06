@@ -7,9 +7,25 @@ class M extends MY_Controller
         parent::__construct();
     }
 
-    public function index()
+    function index()
     {
         redirect(site_url("m/login"));
+    }
+
+    function search_player($id = NULL)
+    {
+        if(NULL === $id){
+            # show seach form
+            $this->display('admin/search_player_form.tpl.php');
+        }else{
+        	$id = substr($id,1,strlen($id));
+            $p = $this->players->show_one($id);
+            if($p != NULL){
+            	$this->assign('p',$p);
+            }
+            
+            $this->display('admin/search_player_result.tpl.php');
+        }
     }
 
     function edit_post($pid = 0)
@@ -133,7 +149,7 @@ class M extends MY_Controller
         $this->display('admin/show_players.tpl.php');
     }
 
-    public function delete_post($id = 0)
+    function delete_post($id = 0)
     {
         if (!isset($_SESSION['user'])) {
             die("Not Allow!");
@@ -150,7 +166,7 @@ class M extends MY_Controller
         echo json_encode($ret_data);
     }
 
-    public function show_post()
+    function show_post()
     {
         if (!isset($_SESSION['user'])) {
             die("Not Allow!");
@@ -160,7 +176,7 @@ class M extends MY_Controller
         $this->display('admin/show_list.tpl.php');
     }
 
-    public function add_post()
+    function add_post()
     {
         if (!isset($_SESSION['user'])) {
             die("Not Allow!");
@@ -178,7 +194,7 @@ class M extends MY_Controller
         }
     }
 
-    public function login()
+    function login()
     {
         if ($this->request_method == 'GET') {
             $this->display('admin/login.tpl.php');
@@ -196,7 +212,7 @@ class M extends MY_Controller
 
     }
 
-    public function logout()
+    function logout()
     {
         if (!isset($_SESSION['user'])) {
             die("Not Allow!");
@@ -205,7 +221,7 @@ class M extends MY_Controller
         return redirect(site_url("m"));
     }
 
-    public function home()
+    function home()
     {
         if (!isset($_SESSION['user'])) {
             die("Not Allow!");
