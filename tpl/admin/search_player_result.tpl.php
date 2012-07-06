@@ -25,13 +25,13 @@
 					<td colspan="5" style="align=center"><span style="align=center;color:red">没有这个选手，或已经被删除。</td>
 				{else}
 
-					<td class="date">{$p.id}</td>
+					<td class="date">{$id}</td>
 					<td class="date" id="title{$p.id}">{$p.name}</td>
 					<td class="date">{$p.identity_no}</td>
 					<td class="date">{$p.reg_date}</td>
 					<td class="date">
-						<a href="{site_url("m/show_player/{$p.id}")}">查看详细资料</a>
-						<a href="{site_url("m/verify/{$p.id}")}" onclick="">通过审核</a>
+						<a href="{site_url("m/show_player/{$id}")}">查看详细资料</a>
+						
 
 					</td>
 					{/if}

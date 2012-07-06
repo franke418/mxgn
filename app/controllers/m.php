@@ -23,7 +23,7 @@ class M extends MY_Controller
             if($p != NULL){
             	$this->assign('p',$p);
             }
-            
+            $this->assign('id',$id);
             $this->display('admin/search_player_result.tpl.php');
         }
     }
